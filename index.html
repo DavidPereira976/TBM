@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- icones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Calculando sua Taxa de Metabolismo Basal</h1>
+    </header>
+
+    <main>
+      <section class="first-section-main">
+        <div class="sub-main">
+          <div>
+            <label for="gender">Gênero:</label>
+            <input type="radio" value="man" name="gender" id="man" />
+            <label for="man">Homen</label>
+            <input type="radio" value="woman" name="gender" id="woman" />
+            <label for="woman">Mulher</label>
+          </div>
+          <div class="sub-sub">
+            <label for="weight">Peso:</label>
+            <input
+              type="number"
+              id="num0"
+              name="weight"
+              placeholder="Digite seu peso em kg (ex: 70)"
+            />
+          </div>
+          <div class="sub-sub">
+            <label for="height">Altura:</label>
+            <input
+              type="number"
+              id="num1"
+              name="height"
+              placeholder="Digite sua altura em cm (ex: 170)"
+            />
+          </div>
+          <div class="sub-sub">
+            <label for="age">Idade:</label>
+            <input
+              type="number"
+              id="num2"
+              name="age"
+              placeholder="Digite sua idade em anos (ex: 25)"
+            />
+          </div>
+          <p class="Title-board">Consumo de calorias:</p>
+          <p id="board"></p>
+          
+          <button onclick="calc()" class="btn">Calcular</button>
+        </div>
+      </section>
+
+      <section class="second-section-main">
+        <div>
+          <h2>Emagrecimento</h2>
+          <i class="fa-solid fa-fire"></i>
+          <p id="loss"></p>
+          <h4 id="resultLoss"></h4>
+        </div>
+        <div>
+          <h2>Ganho de Peso</h2>
+          <i class="fa-sharp fa-solid fa-dumbbell"></i>
+          <p id="gain"></p>
+          <h4 id="resultGain"></h4>
+        </div>
+        <div>
+          <h2>Manter o Peso</h2>
+          <i class="fa-sharp fa-solid fa-scale-balanced"></i>
+          <p id="advice"></p>
+          <h4 id="keep"></h4>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
