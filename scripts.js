@@ -18,6 +18,8 @@ function calc() {
   result.innerText = ``;
   result.style.color = "";
 
+  let res;
+
   if (genderMan) {
     res = 66 + 13.7 * num0 + 5.0 * num1 - 6.8 * num2; // men
     result.innerText += ` ${Math.round(res)} Kcal`;
